@@ -1,0 +1,467 @@
+@1    = ~Ten krok potrwa mala chwile...~
+@2    = ~Ten komponent jest juz zainstalowany przez inny mod.~
+@3    = ~Disabled pending permission of the Ease of Use authors.~
+@4    = ~Zawiera TuTu Fixpack.~
+@5    = ~Exotic Item Pack jest wymagany dla tego komponentu.~
+@100  = ~Nieograniczona liczebnosc amunicji~
+@200  = ~Nieograniczona liczebnosc kamieni i bi¿uterii~
+@300  = ~Nieograniczona liczebnosc mikstur~
+@400  = ~Nieograniczona liczebnosc zwojow~
+@500  = ~Przywroc oryginalny limit doswiadczenia z Baldur's Gate~
+@600  = ~Torby przechowywania dla Baldur's Gate~
+
+@601  = ~Pas Amunicji~
+@602  = ~Ten pas ramienny idealnie jest dostosowany do trzymania pocisków, strza³, be³tów, strza³ek
+
+Statysyki:
+
+Pojemnoœæ: 2,000 pocisków, strza³ek, strza³ i be³tów
+Waga: 2~
+
+@603  = ~Pojemnik na mikstury~
+@604  = ~Typowo noszone przez przejezdnych uzdrowicieli, posiada skórzane zagiêcia otwarte i pozwala u¿ytkownikowi zwi¹zaæ delikatne butelki napoju do jego zamortyzowanego œrodka, posiada skórzane rzemienia dla bezpiecznego przechowywania podczas podró¿y. Bez wzglêdu na jak wiele napojów jest zawarty w tym przypadku, to zawsze wa¿y tê sam¹ iloœæ.
+
+Statysyki:
+
+Pojemnoœæ: 100 butelek
+Waga: 2~
+
+@650  = ~Torba Przechowywania bez dna~
+@651  = ~Ten komponent wymaga "Torby Przechowywania dla BG1."~
+@700  = ~Ujawnienie mapy miasta po wejœciu do niego~
+@800  = ~Poprawka animacji broni~
+@900  = ~Uzyyj interakcji Valen/Solaufeina~
+@1000 = ~Zmuszenie wszystkich dialogow do Pauzy~
+@1100 = ~Identyfikacja wszystkich przedmiotów~
+@1200 = ~Usuniecie animacji helmu~
+@1300 = ~100% szans na nauczenie siê czarow~
+@1400 = ~Sklepy sprzedaja wieksze stosy przedmiotow~
+@1500 = ~Maczugi dla wszystkich klas~
+@1600 = ~Dodanie notek na mapie~
+
+@1601 = ~Gospoda Candlekeep~
+@1602 = ~Kwatery Kap³anów~
+@1603 = ~Œwi¹tynia Oghmy~
+@1604 = ~Magazyn~
+@1605 = ~Frontowa Brama~
+@1606 = ~Biblioteka Candlekeep~
+@1607 = ~Sypialnia~
+@1608 = ~Baraki~
+@1609 = ~Szpital~
+@1610 = ~Posiad³oœæ Entara Srebrnej Tarczy~
+@1611 = ~He³m i P³aszcz~
+@1612 = ~Tawerna~
+@1613 = ~Œwi¹tynia Helma~
+@1614 = ~Wrota Czarnego Smoka~
+@1615 = ~Wie¿a Ramazitha~
+@1616 = ~Pa³ac Duchal~
+@1617 = ~Pod trzema bary³kami~
+@1618 = ~P³on¹ca Syrena~
+@1619 = ~Pod Napusznym Jesiotrem~
+@1620 = ~Œwi¹tynia Ilmatera~
+@1621 = ~Dom rozliczeniowy~
+@1622 = ~Piwnice~
+@1623 = ~Karawana~
+@1624 = ~Gospoda Pod Pomocn¹ D³oni¹~
+@1625 = ~Œwi¹tynia Wiedzy~
+@1626 = ~Weso³y ¯ongler~
+@1627 = ~Gospoda Feldeposta~
+@1628 = ~KuŸnia Grzmiacego M³ota~
+@1629 = ~Czerwony Bukiet~
+@1630 = ~P³on¹cy Czarodziej~
+@1631 = ~Rezydencja~
+@1632 = ~Wysoki ¯ywop³ot~
+@1633 = ~Dom~
+@1634 = ~Jaskinia~
+@1635 = ~Zatopiony Dom~
+@1636 = ~Gospoda Nashkel~
+@1637 = ~Sklep Nashkel~
+@1638 = ~Pod Bekaj¹cym Smokiem~
+@1639 = ~Dworek~
+@1640 = ~Garnizon~
+@1641 = ~Twierdza Gnolli~
+@1642 = ~Wejœcie do Kopalni~
+@1643 = ~Kabina~
+@1644 = ~RzeŸba~
+@1645 = ~Opuszczony Dom~
+@1646 = ~Westybul~
+@1647 = ~Swi¹tynia Pieœni Poranka~
+@1648 = ~Ruiny Ulcaster~
+@1649 = ~Wyjœcie~
+@1650 = ~W dó³ do ni¿szego poziomu~
+@1651 = ~Do góry do wy¿szego poziomu~
+@1652 = ~Wyjœcie na powierzchniê~
+@1653 = ~Wioska Gullykin~
+@1654 = ~Wejœcie do ruin Mostu Firewine~
+@1655 = ~Wrak Statku~
+@1656 = ~Opuszczona Latarnia~
+@1657 = ~Sk³ad~
+@1658 = ~Farma~
+@1659 = ~Przejœcie Wyrm~
+@1660 = ~Du¿y Namiot~
+@1661 = ~Pajêcze Gniazdo~
+@1662 = ~Drzewo Dom~
+@1663 = ~Tama na Rzece~
+@1664 = ~Winda Kopalni~
+@1665 = ~Tawerna Elfia Pieœñ~
+@1666 = ~Czarodziejskie Rozmajtoœci~
+@1667 = ~Sklep Dyskontowy Szczêœliwego Aello~
+@1668 = ~Sklep z broni¹ Maltza~
+@1669 = ~Tawerna Keexie~
+@1670 = ~Sklep Ciszy~
+@1671 = ~Ostrze i Gwiazdy~
+@1672 = ~Ogólny Sklep~
+@1673 = ~Gospoda~
+@1674 = ~Budynek Mistrza Przystani~
+@1675 = ~Pochy³a Latarnia~
+@1676 = ~Dom Pani Wód~
+@1677 = ~¯elazney Tron~
+@1678 = ~Tawerna Jompalina~
+@1679 = ~Siedem S³oñc~
+@1680 = ~P³omienna Piêœæ~
+@1681 = ~Liga Kupiecka~
+@1682 = ~Tawerna~
+@1683 = ~Dom Pani~
+@1684 = ~Komnata Cudów~
+@1685 = ~Wielka Komnata Cudów ~
+@1686 = ~Dom Ragefasta~
+@1687 = ~Wró¿bita~
+@1688 = ~Sklep z Drobiem~
+@1689 = ~Tawerna Dakrona~
+@1690 = ~Rezydencja Felonius~
+@1691 = ~Gospoda Brody Ulgotha~
+@1692 = ~Opuszczona Wie¿a~
+@1693 = ~Wejœcie do Wie¿y Durlaga~
+@1694 = ~Wyjœcie z kopalni~
+@1695 = ~Wyjœcie~
+@1696 = ~Œwi¹tynia Bhaala~
+
+@1700 = ~Miecze Pó³torarêczne mo¿na nosiæ obur¹cz~
+@1800 = ~Zmiana interfejsu TuTu (Zawiera pocz¹tkowy ekran autorstwa Sim'a)~
+@1801 = ~Mo¿esz graæ w Baldur's Gate w rozdzielczoœci 640x480, jak i w 800x600.~
+@1802 = ~Mikstura Lustrzanych Oczu chroni przed atakami opartymi na wzroku.~
+@1803 = ~Nieumarli s¹ odporni na spojrzenie Bazyliszka~
+@1804 = ~Magiczne bronie s¹ nie³amliwe.~
+@1805 = ~Przedmioty wielu stworzeñ s¹ wartoœciowie i mog¹ zostaæ sprzedane kupuj¹cemu.~
+@1806 = ~Skorupy niektórych stworzeñ s¹ wartoœciowe i mog¹ zostaæ wykute do przedmiotów z w³aœciwym kowalem.~
+@1807 = ~Wilki-wampiry s¹ odporne na niemagiczn¹ broñ.~
+@1808 = ~Z rozmaitoœci¹ amunicji dostêpnych dla ³uków i inne bronie mog¹ byæ bardzo wszechstronne.~
+@1809 = ~Mikstury mog¹  ochroniæ postacie przed magi¹ i magicznymi skutkami.~
+@1810 = ~Przygoda nie koñczy siê z Baldur's Gate. Mo¿esz zaimportowaæ swoje postacie do Baldur's Gate II: Cienie Amn i kontynuowaæ przygodê.~
+@1811 = ~Baldur's Gate jest nazwane od bohatera, Baldurana.~
+@1812 = ~Zwoje zamiany kamienia w cia³o mog¹ uratowaæ spetryfikowan¹ osobê.~
+@1813 = ~Rozproszenie magii usunie efekty magiczne wrogów - i korzystnie - efekty rzucone na twoje postacie.~
+@1814 = ~Mag mo¿e otwieraæ drzwi lub skrzynie za pomoc¹ czaru Otwarcie~
+@1815 = ~Kap³ani rzucaj¹ wzmacniaj¹ce zaklêcie takie jak B³ogos³awieñstwo czy Psalm aby pomóc s³abszym postaciom.~
+@1816 = ~Eliksir Zdrowia ³¹czy efekty Mikstury Leczenia i Antidotum.~
+@1817 = ~Zwoje ochronne mog¹s siê bardzo przydaæ w walce.~
+@1818 = ~Postacie z na³o¿on¹ kl¹tw¹ mog¹ liczyæ na pomoc w œwi¹tyni.~
+
+@1900 = ~Style walki dla wszystkich klas~
+@2000 = ~Usun limit doswiadczenia w BG1~
+@2100 = ~Usun dŸwiêk "Przed wyruszeniem w droge..." (Weimer)~
+@2200 = ~Uzywaj magicznych pierœcieni I zbroji (Weimer)~
+@2300 = ~Wieloklasowcy mog¹ wydaæ 5 punktów biegloœci (Weimer)~
+@2400 = ~Prawdziwe Wielkie Mistrzostwo (Baldurdash)~
+@2500 = ~Poprawione tabele Trak0, Rzuty Obronne, Biegloœci, postêp zaklêæ kap³añskich (Blucher)~
+@2501 = ~Alchemia (Mag)~
+@2502 = ~Alchemia (Kap³an)~
+@2503 = ~Alchemia (Z³odziej)~
+
+@2504 = ~Alchemia (Mag)
+Ta zdolnoœæ pozwala magowi na tworzenie mikstur. Mikstury s¹ wytwarzane losowo z poni¿szej listy:
+1)  Mikstura Absorpcji
+2)  Mikstura Odpornoœci Na Ogieñ
+3)  Mikstura Odpornoœci Na Zimno
+4)  Mikstura Niewidzialnoœci
+5)  Mikstura Kamiennej Skóry
+6)  Mikstura Si³y
+7)  Mikstura Zrêcznoœci
+8)  Mikstura ognistego dechu 
+9)  Olej Szybkoœci
+10) Olej wœciek³ego p³omienia ~
+
+@2505 = ~Alchemia (Kap³an)
+Ta zdolnoœæ pozwala kap³anowi na tworzenie mikstur. Mikstury s¹ wytwarzane losowo z poni¿szej listy:
+1)  Mikstura Leczenia
+2)  Mikstura Dodatkowego Leczenia
+3)  Mikstura Wiêkszego Leczenia
+4)  Eliksir Zdrowia
+5)  Mikstura Jasnoœci Umysu 
+6)  Mikstura Regeneracji
+7)  Mikstura Klarownoœci
+8)  Antidotum
+9)  Mikstura Skupienia
+10) Mikstura Geniuszu~
+
+@2506 = ~Alchemiy (Z³odziej)
+Ta zdolnoœæ pozwala z³odziejowi na tworzenie mikstur. Mikstury s¹ wytwarzane losowo z poni¿szej listy:
+
+1) Mikstura Skupienia
+2) Mikstura Percepcji
+3) Mikstura Niewidzialnoœci
+4) Mikstura Wiêkszego Leczenia
+5) Mikstura Regeneracji
+6) Antidotum
+7) Olej Szybkoœci
+8) Mikstura z³odzieja si³y Giganta~
+
+@2507 = ~Pisanie Zwojów (Mag)~
+@2508 = ~Pisanie Zwojów (Kap³an)~
+@2509 = ~Pisanie Zwojów (£otrzyk)~
+
+@2510 = ~Pisanie Zwojów (Mag)
+Ta zdolnoœæ pozwala magowi tworzenie zwojów œredniej klasy. Zwoje s¹ tworzone losowo z poni¿ej listy:
+1)  Magiczny Pocisk
+2)  Tarcza
+3)  Kwasowa Strza³a Melfa
+4)  Lustrzane Odbicie
+5)  Miniaturowe Meteory Melfa
+6)  Mniejsze Odchylenie Czaru
+7)  Ulepszona Niewidzialnoœæ
+8)  Lodowa Nawa³nica
+9)  Wyrocznia
+10) Chaos~
+
+@2511 = ~Pisanie Zwojów (Kap³an)
+Ta zdolnoœæ pozwala magowi tworzenie boskich zwojów. Zwoje s¹ tworzone losowo z poni¿ej listy:
+1)  Leczenie Krytycznych Ran
+2)  S³up Ognia
+3)  Wskrzeszenie
+4)  Przywrócenie
+5)  Ochrona przed Kwasem
+6)  Ochrona przed Zimnem
+7)  Ochrona przed Elektrycznoœci¹
+8)  Ochrona przed Ogniem
+9)  Si³a Czempiona
+10) Dominacja Umys³owa~
+
+@2512 = ~Pisanie Zwojów (£otrzyk)
+Ta zdolnoœæ pozwala magowi tworzenie s³abej i œredniej jakoœci zwojów. Zwoje s¹ tworzone losowo z poni¿ej listy:
+1) Magiczny Pocisk
+2) Przyspieszenie Ruchów
+3) Ognista Kula
+4) Rozproszenie Magii
+5) Okropne Zauroczenie
+6) Niewidzialnoœæ
+7) Sto¿ek Zimna
+8) Przywo³anie Potwora II
+9) Przywo³anie Potwora III~
+
+@2600 = ~Umozliwienie korzystania ze zdolnoœci zlodziejskich i krycia sie w cieniu noszac cie¿ka zbroje~
+
+@2700 = ~Animacje rzucania czarów z Icewind Dale (Andyr)~
+
+@2800 = ~Exotic Item Pack~
+@2801 = ~Kol³zan Obfitoœci~
+@2802 = ~Historia tego magicznego ko³czaniu na d³ugo zosta³a zapomniana, chocia¿ to prawdopodobnie ¿e wszelka dokumentacja zaginê³a w Czasach Niepokojów
+
+Statysyki:
+
+Nieograniczone Strza³y~
+@2803 = ~Futera³ Obfitoœci~
+@2804 = ~Historia tego magicznego futera³u na d³ugo zosta³a zapomniana, chocia¿ to prawdopodobnie ¿e wszelka dokumentacja zaginê³a w Czasach Niepokojów
+
+Statysyki:
+
+Nieograniczone Be³ty~
+@2805 = ~Torba Obfioœci~
+@2806 = ~Chocia¿ ta miêkka z materia³u torba jest pusta w³aœnie teraz, ale magiczna aura wyraŸnie j¹ otacza.
+
+Statysyki:
+
+Nieograniczone Pociski~
+
+@2807 = ~Purpurowy Kamieñ Ioun~
+@2808 = ~Purpurowy Kamieñ Ioun
+
+Ten kamieñ, posiada g³êboki kolor purpurowy w barwie, pozwala nosicielowi wejrzeæ w cienie ciemnoœci.
+
+Statysyki:
+
+Specjalna zdolnoœæ: Infrawizja 60m.
+Waga: 2~
+
+@2809 = ~Migocz¹cy Bia³y Kamieñ Ioun~
+@2810 = ~Migocz¹cy Bia³y Kamieñ Ioun
+
+Ten kamieñ jest ch³odny po dotkniêciu i promieniuje energi¹
+
+Statysyki:
+
+Bonus: +10% odpornoœci na zimno
+Waga: 2~
+
+@2811 = ~Katana~
+@2812 = ~Katana
+
+Katana to lekko zakrzywiony miecz o jednym ostrzu. S¹ to prawdopodobnie najostrzejsze miecze jakie kiedykolwiek wykuto, proces ich tworzenia jest d³ugi, trzymany w tajemnicy i jest prawdziw¹ sztuk¹. To ostrze jest chyba najwa¿niejsz¹ czêœci¹ kultury Kara-Tur. Dotkniêcie czy wziêcie do rêki katany samuraja to dla niego obraza i zawsze wywo³uje jego gniew. Rzadkoœci¹ jest by gaijin, czyli obcokrajowiec, posiada³ taki miecz. Albo ten gaijin jest serdecznym przyjacielem wa¿nego ministra, albo zamordowa³ samuraja.
+
+Statysyki:
+
+Obra¿enia: 1K10
+Typ obra¿eñ: sieczne
+Waga: 6
+OpóŸnienie: 4
+Rodzaj bieg³oœci: katana
+Typ broni: 1-rêczna
+Wymagania: Si³a 6
+Nie mo¿e u¿ywaæ:
+Druid
+Kap³an
+Mag
+W³adca Zwierz¹t~
+@2813 = ~Katana +2, Tsu-O-Shi~
+@2814 = ~Katana +2, Tsu-O-Shi
+
+Tsu - och - Shi, te¿ znany jako Po¿¹dane Ostrze, zosta³ wytworzony w narodzie Wa, wiêcej ni¿ piêæ wieków temu, przez kowala miecza Murakaken Shinji, umiejêtnoœæ by³a tak wielka on zosta³ puszczony pog³osk¹, ¿e jest w stanie, by obudziæ duch metalu. Tsu - och - Shi przeszed³ przez rêce ró¿nych spadkobierców inaczej przeciêtnej rodziny Kasune, do potê¿nego daimyo i dobrze znany kochanek miecza Fushima Takagi widzia³ to. Takagi sta³ siê nawiedzony z mieczem i zrobi³ wiele sfrustrowanych prób, by nabyæ ostrze. W koñcu, wynaj¹³ klan ninja, by ukraœæ ostrze dla niego, przykrywaj¹c jego stratê z paleniem mieszaniny rodziny Kasune. Kiedy ninja przedstawi³ ostrze ich pracodawcy, zabi³ ich, na zawsze usuwaj¹c jakiœ zwi¹zek miêdzy Takagi i prawowitymi w³aœcicielami miecza. Takagi schowa³ miecz, czêsto wycofuj¹c do jego kryjówki, by przyjrzeæ siê na jego piêkno i doskona³oœæ. W dniu œmierci Takagiego, jego duch odmówi³ odejœæ ziemia i zostawi³ miecz, wiêc pozosta³ z Tsu - Och - Shi, staj¹c jednym z nich. Od tego dnia, w³adca, potê¿ny, Tsu - Och - Shi musia³ uwa¿aæ na ducha Takagi Fushima, który pija istotê ¿ycia tych, który dotyka broni, ¿eby pozostaæ na Torilu z przedmiotem jego pragnienia. Jako skutek, to przeklête ostrze ma szansê, by osuszyæ nosz¹cego zawsze kiedy jest u¿yte.
+
+Statysyki:
+
+Trak0: +2
+Obra¿enia: 1K10+2
+Typ obra¿eñ: sieczne
+Waga: 4
+OpóŸnienie: 2
+Rodzaj bieg³oœci: katana
+Typ broni: 1-rêczna
+Wymagania: Si³a 6
+
+Szansa na sta³¹ utratê iluœ punktów ¿ycia lub cech
+
+Nie mo¿e u¿ywaæ::
+Druid
+Kap³an
+Mag
+W³adca Zwierz¹t~
+
+@2815 = ~Modyfikacja M¹droœci~
+@2816 = ~Modyfikacja Kondycji~
+@2817 = ~Modyfikacja Zrêcznoœci~
+@2818 = ~Modyfikacja Charyzmy~
+@2819 = ~Modyfikacja Punktów ¯ycia~
+@2820 = ~Modyfikacja Inteligencji~
+@2821 = ~Modyfikacja Si³y~
+@2822 = ~Œwi¹tynia Gullykin~
+
+@2900 = ~Skrypt zmiany wygl¹du~
+@2901 = ~SKRYPT ZMIANY WYGL¥DU:~
+@2902 = ~Ten skrypt pozwala u¿ytkownikowi mieæ kontrolê nad wygl¹dem postaci. Kliknij 'S", by aktywowaæ kran selekcji wyboru wygl¹du. (< skrypt >)~
+
+@3000 = ~Druidzi u¿ywaj¹ Kaplanskiej tabeli doswiadczenia i postêpu zdobywania zaklêæ~
+
+@3100 = ~Maksymalne Punkty Zycia na poziom~
+
+@3200 = ~Obureczne Katany (przelaczanie 1 na 2 reczne)~
+
+@3300 = ~Maksymalne PZ dla spotykanych istot (the bigg)~
+
+@3400 = ~Patch Zadowolenia (NPCe nie walcza; i nie narzekaja; na reputacje;)~
+
+@3500 = ~Pozwolenie postaciom stworzonym w grze dla wielu graczy na "poczekanie tutaj" kiedy zostaj¹ wywalone~
+@3501 = ~Poczekaj na nas w gospodzie "Pod Pomocna; D?onia;". Znajdziemy cie; tam, jes'li cos' sie; zmieni.~
+
+@3600 = ~Zbalansowanie Zmiennokszta³tnego (Weimer)~
+@3601 = ~Sprowadzanie zwierz¹t (Sprowadzanie/Przywo³ywanie)
+
+Poziom: 6
+
+Sfera: Przywo³ywanie
+
+Zasiêg: 60 metrów
+
+Czas dzia³ania: 4 tury
+
+Czas rzucania: 9
+
+Obszar dzia³ania: specjalny
+
+Rzut obronny: brak
+
+
+
+Zaklêcie to pozwala rzucaj¹cemu na przywo³anie i kontrolowanie jednego lub dwóch NiedŸwiedzio³aków. Przez czas dzia³ania czaru bêd¹ one spe³nia³y ka¿de polecenie osoby rzucaj¹cej to zaklêcie. NiedŸwiedzio³aki s¹ powolniejsze od Wiêkszych Wilko³aków, ale s¹ mocniejsze. S¹ one odporne na magiczne i elementalne ataki oraz szybko siê regeneruj¹.~
+
+@3602 = ~Wiêkszy NiedŸwiedzio³ak~
+
+@3603 = ~NiedŸwiedzio³ak~
+
+
+
+@3604 = ~Ta symboliczna ³apa reprezentuje kontrolê Zmiennokszta³tnego nad likantropi¹. Kiedy jest zak³adana Zmiennokszta³tny staje siê Wilko³akiem. Kiedy jest zdejmowana, Zmiennokszta³tny powraca do swej pierwotnej formy. £apa wilko³aka zachowuje siê jak broñ magiczna +2.
+
+
+
+PARAMETRY:
+
+
+
+Atrybuty:  19 SI£, 16 ZRE, 15 KON
+
+Bazowa KP:  1
+
+Odpornoœci:  20% na magiê, odpornoœæ na niemagiczne bronie
+
+Ataki na rundê: 2
+
+Obra¿enia:  1K12
+
+Typ obra¿eñ:  sieczne
+
+OpóŸnienie:  3
+
+Rodzaj bieg³oœci: Sztylet 
+
+Typ broni: 1-rêczna
+
+Mo¿e u¿ywaæ: Zmiennokszta³tny~ 
+
+
+
+@3605 = ~Ta symboliczna ³apa reprezentuje doskona³¹ kontrolê Zmiennokszta³tnego nad likantropi¹. Kiedy jest zak³adana Zmiennokszta³tny staje siê Wiêkszym wilko³akiem. Kiedy jest zdejmowana, Zmiennokszta³tny powraca do swej pierwotnej formy. £apa wilko³aka zachowuje siê jak broñ magiczna +3.
+
+
+
+PARAMETRY:
+
+
+
+Attributes:  21 SI£, 20 ZRE, 25 KON
+
+Bazowa KP:  -6
+
+Bazowe rzuty obronne:  1/1/1/2/1
+
+Odpornoœci:  40% na magiê, 50% na ¿ywio³y, odpornoœæ na niemagiczne bronie
+
+Regeneracja:  3 punkty ¿ycia na sekundê
+
+Ataki na rundê: 3
+
+Bazowa TraK0 ³apy:  6 
+
+Obra¿enia:  2K8
+
+Typ obra¿eñ:  sieczne
+
+OpóŸnienie:  3
+
+Rodzaj bieg³oœci: Sztylet 
+
+Typ broni: 1-rêczna
+
+Mo¿e u¿ywaæ: Zmiennokszta³tny~
+
+@3700 = ~Brak wp³ywu niskiej reputacji na cenê (Sabre)~
+
+@3800 = ~Brak Pu?apek i Zamków (Weimer)~
+
+@3900 = ~Pozwala na rzucanie czarów w cie;z.kiej zbroi~
+
+@4000 = ~Przywrócenie ekranów wczytywania z IWD~
+
+@4100 = ~Moz.liwos'c' sprzedawania kijów, maczug i proc~
+
+@4200 = ~Jednoczesne noszenie wielu magicznych przedmiotów ochronnych~
+
+@4300 = ~Mieszane poprawki~

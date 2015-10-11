@@ -1,0 +1,435 @@
+@1    = ~Cette étape peut demander quelques instants ...~
+@2    = ~Ce composant a déjà été installé par un autre mod.~
+@3    = ~Désactivation de la permission des auteurs d'Ease of Use.~
+@4    = ~Inclus dans le pack correctif de Tutu.~
+@5    = ~Le pack Exotic Item est requis par ce composant.~
+
+@100  = ~Empilage illimite des munitions~
+
+@200  = ~Empilage illimite des gemmes et bijoux~
+
+@300  = ~Empilage illimite des potions~
+
+@400  = ~Empilage illimite des parchemins~
+
+@500  = ~Retour à la limite d'experience originale de Baldur's Gate I~
+
+@600  = ~Ajout de sacs de contenance a BG1~
+@601  = ~Ceinture de munitions~
+@602  = ~Cette ceinture est idéale pour stocker des billes, des fléchettes, des flèches ou des carreaux.
+
+STATISTIQUES:
+
+Capacité: 2,000 billes, fléchettes, flèches ou carreaux en tout
+Poids: 2~
+@603  = ~Sacoche à potions~
+@604  = ~Généralement utilisée par les guérisseurs itinérants, cette sacoche de cuir aux renforts de plumes et aux lanières de cuir permet de protéger des chocs les potions et les fioles les plus fragiles. Quelque soit le nombre de potions à l'intérieur de la sacoche, son poids reste le même.
+STATISTIQUES:
+
+Capacité: 100 potions
+Poids: 2~
+
+@650  = ~Capacité illimitée du sac de contenance infinie~
+@651  = ~Ce composant requiert "Ajout de sacs de contenance a BG1"~
+
+@700  = ~Revelation des cartes de la ville des l'entree dans la zone~
+
+@800  = ~Extension des animations des mouvements d'armes~
+
+@900  = ~Utilisation des interjections de Valen et Solaufein~
+
+@1000 = ~Pause du jeu pendant les dialogues~
+
+@1100 = ~Identification de tous les objets~
+
+@1200 = ~Changement de l'apparence des casques sur les personnages~
+
+@1300 = ~100% de chances d'apprentissage de sorts~
+
+@1400 = ~Les marchands ont des stocks d'objets plus importants~
+
+@1500 = ~Gourdins universels~
+
+@1600 = ~Ajout des notes sur la carte~
+@1601 = ~Auberge de ChâteauSuif~
+@1602 = ~Quartier du Prêtre~
+@1603 = ~Temple d'Oghma~
+@1604 = ~Entrepôt~
+@1605 = ~Porte Principale~
+@1606 = ~Bibliothèque de ChâteauSuif~
+@1607 = ~Dortoir~
+@1608 = ~Caserne~
+@1609 = ~Hôpital~
+@1610 = ~Domaine d'Entar EcuDargent~
+@1611 = ~Le Heaume et la Cape~
+@1612 = ~Taverne~
+@1613 = ~Temple de Heaume~
+@1614 = ~Porte du Dragon Noir~
+@1615 = ~Tour de Ramazith~
+@1616 = ~Palais Ducal~
+@1617 = ~Les Trois Vieilles Chopes~
+@1618 = ~La Sirène Rougissante~
+@1619 = ~Esturgon Sautillant~
+@1620 = ~Chapelle d'Ilmater~
+@1621 = ~Comptoir~
+@1622 = ~Caves~
+@1623 = ~Caravane~
+@1624 = ~Auberge du BrasAmical~
+@1625 = ~Temple de la Sagesse~
+@1626 = ~Au Jongleur Jovial~
+@1627 = ~Auberge de Feldpost~
+@1628 = ~Forge de GrondeMarteau~
+@1629 = ~La Gerbe Rouge~
+@1630 = ~Le Magicien Ardent~
+@1631 = ~Manoir~
+@1632 = ~Haute Haie~
+@1633 = ~Maison~
+@1634 = ~Grotte~
+@1635 = ~Maison Innondée~
+@1636 = ~Auberge de Nashkel~
+@1637 = ~Magasin de Nashkel~
+@1638 = ~La Taverne du Dragon qui Rote~
+@1639 = ~Maison du Manoir~
+@1640 = ~Garnison~
+@1641 = ~Forteresse Gnoll~
+@1642 = ~Entrée de la Mine~
+@1643 = ~Cabane~
+@1644 = ~Sculpture~
+@1645 = ~Maison Abandonnée~
+@1646 = ~Vestibule~
+@1647 = ~Temple du Chant du Matin~
+@1648 = ~Ruines d'Ulcaster~
+@1649 = ~Sortie~
+@1650 = ~Descente vers l'Etage Inférieur~
+@1651 = ~Montée vers l'Etage Supérieur~
+@1652 = ~Sortie vers la Surface~
+@1653 = ~Village de Gullykin~
+@1654 = ~Entrée des Ruines de Flammevin~
+@1655 = ~Bâteau Echoué~
+@1656 = ~Phare Abandonné~
+@1657 = ~Trou~
+@1658 = ~Ferme~
+@1659 = ~Traversée du Wyrm~
+@1660 = ~Grande tente~
+@1661 = ~Nid des Araignées~
+@1662 = ~Maison Arboricole~
+@1663 = ~Bouchon de la Rivière~
+@1664 = ~Ascenceur de Mine~
+@1665 = ~La Taverne du Chant de l'Elfe~
+@1666 = ~Objets Magiques~
+@1667 = ~Magasin d'Aello la Chance~
+@1668 = ~Armurerie de Maltz~
+@1669 = ~Taverne de Keexie~
+@1670 = ~Magasin du Silence~
+@1671 = ~Lames et Etoiles~
+@1672 = ~Magasin Général~
+@1673 = ~Taverne~
+@1674 = ~Maison du Maître du Port~
+@1675 = ~La Lanterne Assourdie~
+@1676 = ~Maison de la Reine des Eaux~
+@1677 = ~Le Trône de Fer~
+@1678 = ~La Taverne de Jopalin~
+@1679 = ~Les Sept Soleils~
+@1680 = ~Le Poing Enflammé~
+@1681 = ~La Ligue des Marchands~
+@1682 = ~La Vieille Auberge~
+@1683 = ~La Maison de la Dame~
+@1684 = ~Maison des Merveilles~
+@1685 = ~Grande Maison des Merveilles~
+@1686 = ~Maison de Ragevite~
+@1687 = ~La Diseuse de Bonne Aventure~
+@1688 = ~Magasin de Volaille~
+@1689 = ~La Taverne de Drakon~
+@1690 = ~Manoir de Felonius Gist~
+@1691 = ~Auberge de la Barbe d'Ulgoth~
+@1692 = ~Tour Abandonnée~
+@1693 = ~Entrée de la Tour de Durlag~
+@1694 = ~Sortie de la Mine~
+@1695 = ~Sortie~
+@1696 = ~Temple de Bhaal~
+
+@1700 = ~Epees Batardes a 2 mains~
+
+@1800 = ~Amelioration de l'Interface de Tutu (incluant l'ecran de Sim)~
+@1801 = ~Vous pouvez jouer à Baldur's Gate Tutu dans deux résolutions: 640 par 480 et 800 par 600.~
+@1802 = ~Les Potions de rétrovision protègent vos personnages des attaques basées sur le regard.~
+@1803 = ~Les morts-vivants sont immunisés au regard des Basilics.~
+@1804 = ~Les armes magiques ne peuvent pas se briser.~
+@1805 = ~Les peaux de certaines créatures ont une certaine valeur et peuvent être vendues aux bons marchands.~
+@1806 = ~Les écailles ou carapaces de certaines créatures ont une certaine valeur et peuvent servir à forger des objets si vous les apportez au bon forgeron.~
+@1807 = ~Les loups vampiriques sont immunisés aux armes normales.~
+@1808 = ~Les nombreux types de munitions disponibles pour les arcs et autres armes de tir permettent des attaques variées.~
+@1809 = ~Les potions peuvent vous aider à vous protéger contre la magie ou des effets magiques.~
+@1810 = ~L'aventure ne se finit pas forcément avec Baldur's Gate. Vous pouvez importer vos personnages vers Baldur's Gate II: Shadows of Amn et continuer l'aventure.~
+@1811 = ~Baldur's Gate tire son nom du héros Baldurien.~
+@1812 = ~Les parchemins de transformation de la pierre en chair permettent de sauver des personnes pétrifiées.~
+@1813 = ~Dissipation de la magie dissipe aussi bien les sorts bénéfiques que néfastes de vos personnages.~
+@1814 = ~Le sort de mage Déblocage peut être utilisé pour déverrouiller des coffres.~
+@1815 = ~Les sorts de prêtre comme Bénédiction ou Cantique peuvent faire la différence dans les combats difficiles notamment à bas niveau.~
+@1816 = ~Les Elixirs de santé combinent les effets d'une Potion de santé et d'un Antidote.~
+@1817 = ~Les parchemins de protection peuvent être utiles en combat.~
+@1818 = ~Les objets maudits peuvent être retirés dans les temples ou avec le sort de Délivrance de la malédiction.~
+
+@1900 = ~Acces aux styles de combat a toutes les classes~
+
+@2000 = ~Suppression de la limite d'experience de BG1~
+
+@2100 = ~Suppresion du son "Vous devez reunir votre groupe avant d'aller plus loin" (Weimer)~
+
+@2200 = ~Combinaisons possibles d'armures et d'anneaux magiques (Weimer)~
+
+@2300 = ~Grande maitrise pour les multi-classes (Weimer)~
+
+@2400 = ~"Veritable" grande maitrise (Baldurdash)~
+
+@2500 = ~Application des vraies regles concernant le TAC0, les jets de sauvegarde, la grande maitrise ainsi que la progression des sorts de magicien et de pretre (Blucher)~
+@2501 = ~Alchimie (Mage)~
+@2502 = ~Alchimie (Prêtre)~
+@2503 = ~Alchimie (Roublard)~
+@2504 = ~Alchimie (Mage)
+Cette capacité permet à un mage de créer des potions. Les potions créées sont choisies aléatoirement à partir de la liste suivante:
+1)  Potion d'Absorption
+2)  Potion de Résistance au Feu
+3)  Potion de Résistance au Froid
+4)  Potion d'Invisibilité
+5)  Potion de Statue
+6)  Potion de Force
+7)  Potion d'Agilité
+8)  Potion d'Haleine Ardente
+9)  Huile de Rapidité
+10) Huile de Feux Ardents~
+@2505 = ~Alchimie (Prêtre)
+Cette capacité permet à un prêtre de créer des potions. Les potions créées sont choisies aléatoirement à partir de la liste suivante:
+1)  Potion de Soins
+2)  Potion de Grands Soins
+3)  Potion de Soin Majeur
+4)  Elixir de Soins
+5)  Potion de Perspicacité
+6)  Potion de Régénération
+7)  Potion de Clarté
+8)  Antidote
+9)  Potion de Focalisation Mentale
+10) Potion de Génie~
+@2506 = ~Alchimie (Roublard)
+Grace à l'ingéniosité propre à leur classe, les roublards expérimentés ont vu tellement de potions au cours de leurs aventures qu'ils sont capables de les reproduire. Avec la capacité Alchimie, un roublard peut créer une potion par jour parmi huit types différents. 
+
+Les potions créées sont choisies aléatoirement à partir de la liste suivante: 
+1) Potion de Focalisation mentale
+2) Potion de Perception
+3) Potion d'Invisibilité
+4) Potion de Soin Majeur
+5) Potion de Régénération
+6) Antidote
+7) Huile de Rapidité
+8) Potion de Roublard de Force de Géant du Froid~
+@2507 = ~Ecriture de Parchemins(Mage)~
+@2508 = ~Ecriture de Parchemins (Prêtre)~
+@2509 = ~Ecriture de Parchemins (Roublard)~
+@2510 = ~Ecriture de Parchemins (Mage)
+Cette capacité permet à un mage de créer des parchemins de bas et moyen niveau. Les parchemins créés sont choisis aléatoirement à partir de la liste suivante:
+1)  Projectile Magique
+2)  Bouclier
+3)  Flèche Acide de Melf
+4)  Image Mirroir
+5)  Minuscules Météores de Melf
+6)  Déviation des Sorts Mineurs
+7)  Invisibilité Majeure
+8)  Tempête de Glace
+9)  Oracle
+10) Chaos~
+@2511 = ~Ecriture de Parchemins (Prêtre)
+Cette capacité permet à un prêtre de créer des parchemins. Les parchemins créés sont choisis aléatoirement à partir de la liste suivante:
+1)  Soin des Blessures Critiques
+2)  Colonne de Feu
+3)  Animation des Morts
+4)  Restauration
+5)  Protection contre l'Acide
+6)  Protection contre le Froid
+7)  Protection contre la Foudre
+8)  Protection contre le Feu
+9)  Force du Champion
+10) Domination Mentale~
+@2512 = ~Ecriture de Parchemins (Roublard)
+Cette capacité permet à un roublard de créer des parchemins de bas et moyen niveau. Les parchemins créés sont choisis aléatoirement à partir de la liste suivante:
+1) Projectile Magique
+2) Hâte
+3) Boule de Feu
+4) Dissipation de la Magie
+5) Charme Néfaste
+6) Invisibilité
+7) Cône de Froid
+8) Convocation de Monstres II
+9) Convocation de Monstres III~
+
+@2600 = ~Capacites de voleur et furtivite utilisables meme avec des armures lourdes~
+
+@2700 = ~Graphismes de sorts d'Icewind Dale (Andyr)~
+
+@2800 = ~Pack Exotic Item~
+@2801 = ~Carquois d'Abondance~
+@2802 = ~L'histoire de ce carquois magique a été oubliée depuis longtemps, mais elle est sûrement liée à l'inexplicable pénurie d'artisans en archerie compétents pendant le Temps des Troubles.
+
+STATISTIQUES:
+
+Flèches illimitées~
+@2803 = ~Etui d'Abondance~
+@2804 = ~L'histoire de cet étui magique a été oubliée depuis longtemps, mais elle est sûrement liée à l'inexplicable pénurie d'artisans en archerie compétents pendant le Temps des Troubles.
+
+STATISTIQUES:
+
+Carreaux illimités~
+@2805 = ~Sac d'Abondance~
+@2806 = ~Bien que cette légère poche de tissu soit maintenant vide, une puissante aura magique l'entoure encoure.
+
+STATISTIQUES:
+
+Billes illimitées~
+@2807 = ~Pierre Ionique Pourpre Intense~
+@2808 = ~Pierre Ionique Pourpre Intense
+
+Cette pierre, d'une teinte pourpre très intense, permet à son porteur de voir même au coeur des ténèbres.
+
+STATISTIQUES:
+
+Capacité spéciale: Infravision
+Poids: 2~
+@2809 = ~Pierre Ionique Blanc Radieux~
+@2810 = ~Pierre Ionique Blanc Radieux
+
+Cette pierre est froide au toucher et irradie d'une certaine énergie.
+
+STATISTIQUES:
+
+Bonus: +10% Résistance au Froid
+Poids: 2~
+@2811 = ~Katana~
+@2812 = ~Katana
+
+Le katana est une épée légèrement courbée à simple tranchant, dont la lame se termine en pointe. C'est probablement une des meilleures épées jamais conçues. Les étapes de sa fabrication constituent un procédé long et secret qui est considéré plus comme un art que comme une technique. Cette lame représente un aspect important de la culture de Kara-Tur. C'est faire insulte à un samouraï et provoquer sa colère que d'utiliser ou même de toucher son katana. Il est très rare pour un gaïjin, un étranger, de posséder une telle lame. Cela implique que le gaïjin soit l'ami estimé d'un personnage important, ou bien qu'il ait assassiné un samouraï.
+
+STATISTIQUES:
+
+Dégâts:  1D10
+Type de Dégâts:  tranchant
+Poids:  6
+Facteur de Vitesse: 4
+Compétence: Katana
+Type d'Arme: Arme à 1 main
+Force Nécessaire: 6
+Non-utilisable par:
+ Druide
+ Clerc
+ Mage
+ Belluaire~
+@2813 = ~Katana +2, Tsu-O-Shi~
+@2814 = ~Katana +2, Tsu-O-Shi
+
+Tsu-O-Shi, connu aussi sous le nom de Lame Convoitée, fut forgé dans la nation de Wa il y a plus de 5 siècles, par le forgeron Murakaken Shinji, dont l'habileté était si grande qu'on le disait capable de réveiller le véritable esprit du métal. Tsu-O-Shi est passé entre les mains des nombreux héritiers de la médiocre famille Kasune, jusqu'à ce que Fushima Takagi, puissant daimyo bien connu pour son amour des belles lames, le vit. Takagi devint obsédé par l'épée et essaya plusieurs fois de s'en emparer, sans succès. Finalement, il engagea un clan de ninjas chargés de voler la lame pour son compte, couvrant leurs arrières en brûlant le domaine de la famille Kasune. Quand les ninjas revinrent pour donner la lame à leur employeur, ce dernier utilisa l'arme pour les découper, supprimant ainsi le seul lien qu'on pouvait faire entre Takagi et les propriétaires légitimes du katana. Takagi dissimula l'arme mais il la sortait souvent de sa cachette pour admirer sa beauté si parfaite. Le jour de la mort de Takagi, son esprit refusa de quitter le monde des mortels en laissant le katana derrière lui, aussi il resta avec Tsu-O-Shi, ne faisant qu'un avec l'arme. Depuis ce jour, tous ceux qui manient le puissant Tsu-O-Shi doivent se méfier de l'esprit de Fushima Takagi qui absorbe l'énergie vitale de ceux qui touchent l'arme, pour rester sur Toril avec l'objet de ses désirs. C'est pour cette raison que les utilisateurs de cette lame maudite encourent le risquent de voir leurs forces drainées.
+
+STATISTIQUES:
+
+TAC0: +2
+Dégâts:  1D10 + 2
+Type de Dégâts:  tranchant
+Poids:  4
+Facteur de Vitesse: 2
+Compétence: Katana
+Type d'Arme:  Arme à 1 main
+Force Nécessaire: 6
+
+Risques de perte permanente de vie ou d'attributs pour l'utilisateur
+
+Non-utilisable par:
+Druide
+Clerc
+Mage
+Belluaire~
+@2815 = ~Modification de la Sagesse~
+@2816 = ~Modification de la Constitution~
+@2817 = ~Modification de la Dextérité~
+@2818 = ~Modification du Charisme~
+@2819 = ~Modification des Points de Vie~
+@2820 = ~Modification de l'Intelligence~
+@2821 = ~Modification de la Force~
+@2822 = ~Temple de Gullykin~
+
+@2900 = ~Script de transformation en Avatar~
+@2901 = ~SCRIPT DE TRANSFORMATION EN AVATAR:~
+@2902 = ~Ce script laisse au joueur le contrôle de l'avatar de son personnage. Pressez 'S' pour activer l'écran de sélection d'avatar. (<script>)~
+
+@3000 = ~Les druides suivent les niveaux des clercs et leur echelle de progression~
+
+@3100 = ~Points de vie maximum à chaque montee de niveau~
+
+@3200 = ~Katanas a 2 mains~
+
+@3300 = ~Points de vie maximum pour les PNJs non-recrutables (the bigg)~
+
+@3400 = ~Patch Amical (Les PNJs de l'equipe ne se plaignent pas et ne se battent pas à cause de la réputation)~
+
+@3500 = ~Permet aux PNJ crees en mode multijoueur d'attendre lorsqu'ils sont vires~
+@3501 = ~Allez nous attendre à l'auberge du Bras Amical. Si les choses changent, on se retrouvera là-bas.~
+
+@3600 = ~Reequilibrage du Métamorphe (Weimer)~
+@3601 = ~Convocation d'Animaux
+(Conjuration/Convocation)
+Niveau: 6
+Sphere: Convocation
+Portée: 60 mètres
+Durée: 4 tours
+Temps d'Incantation: 9
+Aire d'Effet: Special
+Jets de Sauvegarde: Aucun
+
+Ce sort permet au lanceur de convoquer et de contrôler 20 Dés de Vie d'Ours-Garous. Les ours répondront aux souhaits du lanceur pendant la durée du sort. Les Ours-Garous sont plus lents que les Muloups Majeurs, mais ils sont également plus puissants. Les Ours-Garous sont résistants aux attaques magiques et élémentaires et se régénèrent rapidement.~
+@3602 = ~Ours-Garou Majeur~
+@3603 = ~Ours-Garou~
+
+@3604 = ~Cette patte symbolise le contrôle d'un Métamorphe sur sa lycanthropie. Tant que cette patte est portée, le métamorphe est un loup-garou. Lorsqu'elle est enlevée, il revient à sa forme humaine. La patte d'un Muloup est considérée comme une arme +2.
+
+PARAMETRES:
+
+Caractéristiques: FOR 19, DEX 16, CON 15
+Classe d'Armure de base: 1
+Résistance: 20% de Résistance à la Magie, immunitée aux armes non-magiques
+Attaques par round: 2
+Dégâts: 1D12
+Type de dégâts: tranchants
+Facteur de vitesse: 3
+Type de Compétence: Dague
+Type d'arme: arme à 1 main
+Utilisable par:
+ Métamorphe~
+ 
+@3605 = ~Cette patte symbolise le contrôle ultime d'un Métamorphe sur sa lycanthropie. Tant que cette patte est portée, le métamorphe est un loup-garou. Lorsqu'elle est enlevée, il revient à sa forme humaine. La patte d'un Muloup Majeur est considérée comme une arme +3.
+
+PARAMETRES:
+
+Caractéristiques: FOR 21, DEX 20, CON 25
+Classe d'Armure de base: -6
+Jet de Sauvegardes: 1/1/1/2/1
+Résistance: 40% de Résistance à la Magie, 50% de Résistance aux Eléments, immunitée aux armes non-magiques
+Régénération: 3 points de vie par seconde
+Attaques par round: 3
+TAC0 de base: 6
+Dégâts: 2d8
+Type de dégâts: tranchants
+Facteur de vitesse: 3
+Type de Compétence: Dague
+Type d'arme: arme à 1 main
+Utilisable par:
+ Métamorphe~
+
+@3700 = ~Magasin Discount pour Faibles Reputations (Sabre)~
+
+@3800 = ~Pas de pieges ni de verrous (Weimer)~
+
+@3900 = ~Autoriser le Lancer de Sorts d'Arcane en Armure~
+
+@4000 = ~Restaurez les écrans de chargement d'IWD~
+
+@4100 = ~Possibilité de vente des bâtons, gourdins et frondes~
+
+@4200 = ~Portez plusieurs objets de protections magiques~
+
+@4300 = ~Réparations assorties~

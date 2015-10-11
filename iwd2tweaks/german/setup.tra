@@ -1,0 +1,430 @@
+@1    = ~Dieser Schritt kann einen Moment dauern...~
+@2    = ~Diese Komponente wurde bereits von einem anderen Mod installiert.~
+@3    = ~Deaktiviert, bis die Erlaubnis der Ease-of-Use-Autoren erteilt ist.~
+@4    = ~Veraltet. Ist im Tutu-Fixpack enthalten.~
+@5    = ~Das "Exotische Items"-Pack ist für diese Komponente notwendig.~
+
+@100  = ~Unbegrenzte Munitionsstapel~
+
+@200  = ~Unbegrenzte Stapel bei Edelsteinen und Schmuck~
+
+@300  = ~Unbegrenzte Tränkestapel~
+
+@400  = ~Unbegrenzte Schriftrollenstapel~
+
+@500  = ~Originale Erfahrungspunktgrenze von Baldur's Gate 1 wiederherstellen~
+
+@600  = ~Nimmervoller Beutel für BG1~
+@601  = ~Munitionsgürtel~
+@602  = ~Der Schultergürtel ist ideal dafür geeignet, Schleudersteine, Wurfpfeile, Pfeile oder Bolzen aufzubewahren.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Kapazität: insgesamt 2.000 Schleuderkugeln, Wurfpfeile, Pfeile oder Bolzen
+Gewicht: 2~
+@603  = ~Tränketasche~
+@604  = ~Diese Ledertasche kann man aufklappen. An den gepolsterten Seiten kann man zahlreiche Tränke mit Lederschnüren sicher festmachen. Eine derartige Ledertasche wird normalerweise von reisenden Heilern benutzt.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Kapazität: 100 Tränke
+Gewicht: 2~
+
+@650  = ~Nimmervoller Beutel ohne Kapazitätsgrenze~
+@651  = ~Diese Komponente benötigt "Nimmervoller Beutel für BG1".~
+
+@700  = ~Karte beim Betreten eines Stadtgebiets enthüllen~
+
+@800  = ~Änderungen von Waffenanimationen~
+
+@900  = ~NPC-Zwischenrufe wie bei Valen/Solaufein~
+
+@1000 = ~Alle Dialoge pausieren das Spiel~
+
+@1100 = ~Alle Gegenstände sind identifiziert~
+
+@1200 = ~Entfernen der Helm-Animationen~
+
+@1300 = ~100% Chance auf Lernen von Zaubern~
+
+@1400 = ~Geschäfte verkaufen größere Stapel von Gegenständen~
+
+@1500 = ~Keulen für alle Charakterklassen~
+
+@1600 = ~Kartennotizen hinzufügen~
+@1601 = ~Wirtshaus in Kerzenburg~
+@1602 = ~Priesterquartiere~
+@1603 = ~Tempel von Oghma~
+@1604 = ~Lagerhaus~
+@1605 = ~Haupttor~
+@1606 = ~Bibliothek von Kerzenburg~
+@1607 = ~Schlafbaracken~
+@1608 = ~Kaserne~
+@1609 = ~Hospital~
+@1610 = ~Anwesen von Entar Silberschild~
+@1611 = ~Helm und Umhang~
+@1612 = ~Taverne~
+@1613 = ~Tempel des Helm~
+@1614 = ~Schwarzdrachentor~
+@1615 = ~Ramaziths Turm~
+@1616 = ~Herzogspalast~
+@1617 = ~Zu den Drei Alten Fässern~
+@1618 = ~Zur Errötenden Nixe~
+@1619 = ~Zum Feiernden Stör~
+@1620 = ~Schrein von Ilmater~
+@1621 = ~Zählhaus~
+@1622 = ~Keller~
+@1623 = ~Karawane~
+@1624 = ~Zum Freundlichen Arm~
+@1625 = ~Tempel der Weisheit~
+@1626 = ~Windiger Schwindler~
+@1627 = ~Feldeposts Wirtshaus~
+@1628 = ~Donnerhammers Schmiede~
+@1629 = ~Rote Garbe~
+@1630 = ~Brennender Zauberer~
+@1631 = ~Anwesen~
+@1632 = ~Hohe Hecke~
+@1633 = ~Haus~
+@1634 = ~Höhle~
+@1635 = ~Versunkenes Haus~
+@1636 = ~Wirtshaus in Nashkell~
+@1637 = ~Laden in Nashkell~
+@1638 = ~Taverne zum Rülpsenden Drachen~
+@1639 = ~Herrenhaus~
+@1640 = ~Garnison~
+@1641 = ~Gnollfeste~
+@1642 = ~Mineneingang~
+@1643 = ~Hütte~
+@1644 = ~Skulptur~
+@1645 = ~Verlassenes Haus~
+@1646 = ~Vestibül~
+@1647 = ~Tempel des Morgenlieds~
+@1648 = ~Ruinen von Ulcaster~
+@1649 = ~Ausgang~
+@1650 = ~Hinunter zur nächsten Ebene~
+@1651 = ~Hinauf zur nächsten Ebene~
+@1652 = ~Ausgang zur Oberfläche~
+@1653 = ~Gullykin~
+@1654 = ~Feuerwein-Ruinen: Eingang~
+@1655 = ~Schiffswrack~
+@1656 = ~Verlassener Leuchtturm~
+@1657 = ~Grube~
+@1658 = ~Farm~
+@1659 = ~Lindwurmkreuzung~
+@1660 = ~Großes Zelt~
+@1661 = ~Spinnennest~
+@1662 = ~Baumhaus~
+@1663 = ~Flußstöpsel~
+@1664 = ~Minenaufzug~
+@1665 = ~Taverne Elfgesang~
+@1666 = ~Allerlei Zauberei~
+@1667 = ~Billigladen des Glücklichen Aello~
+@1668 = ~Maltz' Waffenladen~
+@1669 = ~Taverne Keexie~
+@1670 = ~Geschäft der Stille~
+@1671 = ~Zur Funkelnden Klinge~
+@1672 = ~Gemischtwarenladen~
+@1673 = ~Taverne~
+@1674 = ~Gebäude des Hafenmeisters~
+@1675 = ~Leuchtende Laterne~
+@1676 = ~Haus der Wasserkönigin~
+@1677 = ~Eisenthron~
+@1678 = ~Jopalins Taverne~
+@1679 = ~Sieben Sonnen~
+@1680 = ~Flammende Faust~
+@1681 = ~Händlerliga~
+@1682 = ~Zum Alten Knacker~
+@1683 = ~Haus der Dame~
+@1684 = ~Halle der Wunder~
+@1685 = ~Hohes Haus der Wunder~
+@1686 = ~Ragefasts Haus~
+@1687 = ~Die Seherin~
+@1688 = ~Geflügelfachgeschäft~
+@1689 = ~Taverne "Drakon"~
+@1690 = ~Felonius Gists Herrenhaus~
+@1691 = ~Wirtshaus in Ulgoth's Beard~
+@1692 = ~Verlassener Turm~
+@1693 = ~Durlags Turm: Eingang~
+@1694 = ~Minenausgang~
+@1695 = ~Ausgang~
+@1696 = ~Tempel des Bhaal~
+
+@1700 = ~Zweihändige Bastardschwerter~
+
+@1800 = ~Änderungen am Interface von Tutu (einschließlich Sim's Startbildschirmen)~
+@1801 = ~Ihr könnt Baldur's Gate Tutu sowohl in einer Auflösung von 640 x 480 als auch 800 x 600 spielen.~
+@1802 = ~Tränke der Spiegelaugen schützen Eure Charaktere vor Blickangriffen.~
+@1803 = ~Untote Kreaturen sind gegen die Blicke von Basilisken immun.~
+@1804 = ~Magische Waffen zerbrechen nicht.~
+@1805 = ~Manche Händler kaufen die Felle verschiedener Kreaturen.~
+@1806 = ~Manche Schmiede verarbeiten die Panzer von Kreaturen zu Rüstungen.~
+@1807 = ~Vampirwölfe sind gegen normale Waffen immun.~
+@1808 = ~Bögen und andere Fernkampfwaffen sind aufgrund des breiten Munitionsangebots sehr flexibel.~
+@1809 = ~Tränke können gegen Magie und magische Effekte schützen.~
+@1810 = ~Eure Abenteuer müssen nicht mit Baldur's Gate enden. Ihr könnt Eure Charaktere nach Baldur's Gate II: Schatten von Amn importieren und Eure Reisen dort fortsetzen.~
+@1811 = ~Die Stadt Baldurs Tor ist nach dem Helden Balduran benannt.~
+@1812 = ~Versteinerte Charaktere können mit einer "Stein zu Fleisch"-Rolle wiederhergestellt werden.~
+@1813 = ~"Magie bannen" entfernt die meisten schädlichen, aber auch die nützlichen magischen Effekte von einem Charakter.~
+@1814 = ~Ihr könnt auch den Magierzauber "Klopfen" verwenden, um verschlossene Truhen zu öffnen.~
+@1815 = ~Für Gruppen niedriger Stufen können Priesterzauber wie "Segen" und "Gesang" über Sieg und Niederlage entscheiden.~
+@1816 = ~Heilungselixiere kombinieren die Effekte von Gegengift und Heiltrank.~
+@1817 = ~Schutzrollen können im Kampf sehr nützlich sein.~
+@1818 = ~Verfluchte Gegenstände könnt Ihr in Tempeln oder mit dem Zauber "Fluch brechen" entfernen.~
+
+@1900 = ~Waffenstile für alle Klassen~
+
+@2000 = ~BG1 Erfahrungspunkt-Grenze entfernen~
+
+@2100 = ~"Ihr müßt Eure Gruppe erst sammeln"-Sound entfernen~
+
+@2200 = ~Magische Rünge und Rüstungen tragen~
+
+@2300 = ~Großmeisterschaft für mehrklassige Charaktere~
+
+@2400 = ~Echte Großmeisterschaft~
+
+@2500 = ~Regelkonforme ETW0-Tabelle, Rettungswürfe, Großmeisterschaft und Steigerung der arkanen und göttlichen Zauberfertigkeiten (Blucher)~
+@2501 = ~Alchemie (Magier)~
+@2502 = ~Alchemie (Priester)~
+@2503 = ~Alchemie (Schurken)~
+@2504 = ~Alchemie (Magier)
+Diese Fähigkeit gestattet es einem Magier, Tränke zu brauen. Die erschaffenen Tränke werden zufällig aus folgender Liste ausgewählt:
+1)  Trank der Absorption
+2)  Trank des Feuerwiderstands
+3)  Trank des Kältewiderstands
+4)  Unsichtbarkeitstrank
+5)  Trank der Steinform
+6)  Stärketrank
+7)  Trank der Geschicklichkeit
+8)  Trank des Feuerodems
+9)  Schnelligkeitsöl
+10) Brandöl~
+@2505 = ~Alchemie (Priester)
+Diese Fähigkeit gestattet es einem Priester, Tränke zu brauen. Die erschaffenen Tränke werden zufällig aus folgender Liste ausgewählt:
+1)  Heiltrank
+2)  Konzentrierter Heiltrank
+3)  Extrastarker Heiltrank
+4)  Heilungselixier
+5)  Trank der Einsicht
+6)  Regenerationstrank
+7)  Trank der Klarheit
+8)  Gegengift
+9)  Konzentrationstrank
+10) Trank der Schöpferkraft~
+@2506 = ~Alchemie (Schurken)
+Mit der seiner Klasse innewohnenden Schläue hat ein erfahrener Schurke in seiner Abenteurerkarriere genügend Tränke gesehen, um ihre Herstellung nachahmen zu können. Mit der Alchemiefertigkeit kann ein Schurke einmal pro Tag einen von acht Tränken brauen.
+
+Die erschaffenen Tränke werden zufällig aus folgender Liste ausgewählt:
+1) Konzentrationstrank
+2) Wahrnehmungstrank
+3) Unsichtbarkeitstrank
+4) Extrastarker Heiltrank
+5) Regenerationstrank
+6) Gegengift
+7) Schnelligkeitsöl
+8) Trank der Frostriesenstärke für Schurken~
+@2507 = ~Schriftrollen anfertigen (Magier)~
+@2508 = ~Schriftrollen anfertigen (Priester)~
+@2509 = ~Schriftrollen anfertigen (Schurke)~
+@2510 = ~Schriftrollen anfertigen (Magier)
+Diese Fertigkeit erlaubt es einem Magier, Schriftrollen mit Zaubern niederer bis mittlerer Grade anzufertigen. Die erschaffenen Schriftrollen werden zufällig aus folgender Liste ausgewählt:
+1)  Magisches Geschoß
+2)  Schild
+3)  Melfs Säurepfeil
+4)  Spiegelbild
+5)  Melfs Magische Meteoriten
+6)  Geringere Zauberabwehr
+7)  Verbesserte Unsichtbarkeit
+8)  Eissturm
+9)  Orakel
+10) Chaos~
+@2511 = ~Schriftrollen anfertigen (Priester)
+Diese Fertigkeit erlaubt es einem Priester, Schriftrollen mit göttlichen Zaubern anzufertigen. Die erschaffenen Schriftrollen werden zufällig aus folgender Liste ausgewählt:
+1)  Kritische Wunden Heilen
+2)  Flammenschlag
+3)  Tote Erwecken
+4)  Genesung
+5)  Schutz vor Säure
+6)  Schutz vor Kälte
+7)  Schutz vor Elektrizität
+8)  Schutz vor Feuer
+9)  Vereinte Kräfte
+10) Geistige Beherrschung~
+@2512 = ~Schriftrollen anfertigen (Schurke)
+Diese Fertigkeit erlaubt es einem Schurke, Schriftrollen mit Zaubern niederer bis mittlerer Grade anzufertigen. Die erschaffenen Schriftrollen werden zufällig aus folgender Liste ausgewählt:
+1) Magisches Geschoß
+2) Hast
+3) Feuerball
+4) Magie Bannen
+5) Schreckenszauber
+6) Unsichtbarkeit
+7) Kältekegel
+8) Monster Beschwören II
+9) Monster Beschwören III~
+
+@2600 = ~Diebesfertigkeiten und Schleichen in Schwerer Rüstung erlauben~
+
+@2700 = ~Zaubergrafiken von Icewind Dale (Andyr)~
+
+@2800 = ~Exotische Items~
+@2801 = ~Immervoller Köcher~
+@2802 = ~Die Geschichte dieses magischen Köchers ist schon lange in Vergessenheit geraten. Es muss aber etwas mit der unerklärlichen, aber gut dokumentierten Knappheit fähiger Bogner in der Zeit der Sorgen zu tun haben.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Der Köcher enthält eine unbegrenzte Anzahl von Pfeilen.~
+@2803 = ~Immervolle Bolzenschachtel~
+@2804 = ~Die Geschichte dieses magischen Bolzenschächtelchens ist schon lange in Vergessenheit geraten. Es muss aber etwas mit der unerklärlichen, aber gut dokumentierten Knappheit fähiger Bogner in der Zeit der Sorgen zu tun haben.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Die Bolzenschachtel enthält eine unbegrenzte Anzahl von Bolzen.~
+@2805 = ~Immervoller Beutel~
+@2806 = ~Obwohl dieser kleine Stoffbeutel leer erscheint, wird er doch von einer mächtigen magischen Aura umgeben.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Der Stoffbeutel enthält eine unbegrenzte Anzahl von Schleudersteinen.~
+@2807 = ~Purpurner Ionenstein~
+@2808 = ~Purpurner Ionenstein
+
+Mit diesem Stein von dunkel purpurner Farbe kann den Träger die Schatten der Dunkelheit durchdringen.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Gewährt dem Träger Infravision mit einem Radius von 30 m.
+Gewicht: 2~
+@2809 = ~Flimmerndweißer Ionenstein~
+@2810 = ~Flimmerndweißer Ionenstein
+
+Der Stein fühlt sich kalt an und strahlt Energie aus.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Gewährt dem Träger einen Bonus von 10% auf Widerstand gegen Kälte.
+Gewicht: 2~
+@2811 = ~Katana~
+@2812 = ~Katana
+
+Das Katana ist ein Schwert, dessen Klinge nur auf einer Seite scharf ist. Es ist leicht gekrümmt und endet in einer Spitze, die an die Spitze eines Meißels erinnert. Das Katana stellt vermutlich die aufwendigste Form des Schwertes dar. Seine Fertigung ist ein langer, aufwendiger und höchst geheimer Vorgang, den man schon fast als Kunstwerk bezeichnen müsste. Dieses Schwert spielt in der Kultur von Kara-Tur eine wichtige Rolle. Wenn man es wagt, das Katana eines Samurais zu berühren oder gar zu ziehen, beleidigt man den Samurai, dem es gehört, und zieht seinen Zorn auf sich. Es kommt nur äußerst selten vor, dass ein Gaijin, ein Fremder, in den Besitz einer derartigen Waffe kommt. Entweder handelt es sich bei diesem Gaijin dann um den geehrten Freund eines wichtigen Ministers oder um den Mörder eines Samurais.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Schaden: 1W10 (Klingenwaffe)
+Gewicht: 6
+Initiativefaktor: 4
+Waffenfertigkeit: Katana
+Waffentyp: Einhändig
+Kann nicht verwendet werden von:
+  Druiden
+  Klerikern
+  Magiern
+  Tiermeister~
+@2813 = ~Katana +2, Tsu-O-Shi~
+@2814 = ~Katana +2, Tsu-O-Shi
+
+Tsu-O-Shi, auch als die Begehrte Klinge bekannt, wurde vor über fünfhundert Jahren im Lande Wa von dem Schwertschmied Murakaken Shinji geschmiedet, von dem man sich erzählte, er könnte den Geist des Metalls selbst erwecken. Tsu-O-Shi wurde in der ansonsten unbedeutenden Familie Kasune von Generation zu Generation weitergereicht, bis der mächtige Daimyo Fushima Takagi, ein bekannter Liebhaber von Schwertern, es sah. Takagi, besessen von dem Schwert, versuchte viele Male vergeblich, es in seinen Besitz zu bringen. Schließlich warb er einen Clan von Ninjas an, die die Klinge für ihn stehlen und das Anwesen der Kasunes verbrennen wollten, um den Diebstahl zu vertuschen. Als die Ninjas die Klinge ihrem Auftraggeber übergaben, wurden sie mit ebendieser Waffe niedergemacht und so jede Verbindung zwischen Takagi und den wahren Eigentümern des Schwerts zertrennt. Takagi verbarg das Schwert, zog sich aber oft zu dessen Versteck zurück, um seine Schönheit und Vollkommenheit zu bewundern. Als Takagi starb, weigerte sein Geist sich, die Erde zu verlassen und das Schwert zurückzulassen, blieb bei Tsu-O-Shi und wurde eins mit ihm. Seid diesem Tag muß sich jeder, der die mächtige Waffe führt, vor dem Geist des Fushima Takagi in Acht nehmen, der die Lebenskraft derer trinkt, die die Waffe berühren, um so mit dem Objekt seiner Begierde auf Toril verweilen zu können. Es besteht daher bei jeder Benutzung die Chance, daß sie verfluchte Klinge dem Träger Lebensessenz entzieht.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Bei Benutzung besteht die Möglichkeit, daß dem Träger Treffer- oder Attributspunkte permanent entzogen werden.
+
+ETW0: -2
+Schaden: 1W10 + 2 (Klingenwaffe)
+Gewicht: 4
+Initiativefaktor: 2
+Waffenfertigkeit: Katana
+Waffentyp: Einhändig
+Kann nicht verwendet werden von:
+  Druiden
+  Klerikern
+  Magiern
+  Tiermeister~
+
+@2815 = ~Modifikation: Weisheit~
+@2816 = ~Modifikation: Konstitution~
+@2817 = ~Modifikation: Geschicklichkeit~
+@2818 = ~Modifikation: Charisma~
+@2819 = ~Modifikation: Trefferpunkte~
+@2820 = ~Modifikation: Intelligenz~
+@2821 = ~Modifikation: Stärke~
+@2822 = ~Tempel von Gullykin~
+
+@2900 = ~Avatar-Transformations-Skript~
+@2901 = ~AVATAR-TRANSFORMATIONS-SKRIPT:~
+@2902 = ~Dieses Skript gibt dem Spieler die Kontrolle über den Avatar seines Charakters. Drücken Sie "S", um den Auswahlbildschirm für die Avatare aufzurufen. (<script>)~
+
+@3000 = ~Druiden benutzen Stufen- und Zaubertabellen von Klerikern~
+
+@3100 = ~Maximale Trefferpunkte beim Stufenaufstieg~
+
+@3200 = ~Zweihändige Katanas~
+
+@3300 = ~Maximale Trefferpunkte für nicht-rekrutierbare NPCs (the bigg)~
+
+@3400 = ~Happy Patch (NPCs in der Party bekämpfen sich nicht und beschweren sich nicht über den Ruf)~
+
+@3500 = ~Option "Hier warten" für im Multiplayer-Modus erschaffene Charaktere bei Verlassen der Party~
+@3501 = ~Wartet auf uns im Freundlichen Arm. Wenn wir uns anders entscheiden, werden wir Euch dort treffen.~
+
+@3600 = ~Gestaltwandler-Rebalancing~
+@3601 = ~Tiere beschwören
+(Herbeirufung/Beschwörung) 
+Grad: 6
+Sphäre: Beschwörung
+Reichweite: 60 m
+Wirkungsdauer: 4 Phasen 
+Zeitaufwand: 9
+Wirkungsbereich: Speziell
+Rettungswurf: Nein
+
+Mit Hilfe dieses Zaubers ruft der Druide zwei Werbären mit je 20 Trefferwürfeln herbei. Die Bären befolgen für die Dauer des Zaubers jeden Befehl ihres Beschwörers. Werbären sind langsamer, aber kräftiger als Größere Wolfwere. Sie widerstehen elementaren und magischen Angriffen und regenerieren schnell.~
+@3602 = ~Größerer Werbär~
+@3603 = ~Werbär~
+@3604 = ~Diese symbolische Tatze repräsentiert die Kontrolle eines Gestaltwandler-Druiden über seine Lykanthropie. Solange die Tatze angelegt ist, wird der Gestaltwandler zum Werwolf. Wird sie abgelegt, verwandelt er sich zurück in seine menschliche Form. Die Tatzen eines Werwolfs zählen als Waffen mit einer Verzauberung von +2.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Verleiht dem Träger folgende Werte:
+Attribute: Stärke 19, Geschicklichkeit 16, Konstitution 15
+Basis-Rüstungsklasse: 1
+Resistenzen: 20% Magieresistenz, Immunität gegen normale Waffen
+Angriffe pro Runde: 2
+Schaden: 1W12 (Klingenwaffe)
+Initiativefaktor: 3
+Waffenfertigkeit: Dolch
+Waffentyp: Einhändig
+Kann nur verwendet werden von:
+  Gestaltwandler~ 
+
+
+@3605 = ~Diese symbolische Tatze repräsentiert die vollkommene Kontrolle eines Gestaltwandler-Druiden über seine Lykanthropie. Solange die Tatze angelegt ist, wird der Gestaltwandler zum Größeren Werwolf. Wird sie abgelegt, verwandelt er sich zurück in seine menschliche Form. Die Tatzen eines Werwolfs zählen als Waffen mit einer Verzauberung von +3.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Verleiht dem Träger folgende Werte:
+Attribute: Stärke 21, Geschicklichkeit 20, Konstitution 25
+Basis-Rüstungsklasse: -6
+Resistenzen: 40% Magieresistenz, 50% Widerstand gegen Elemente, Immunität gegen normale Waffen
+Angriffe pro Runde: 3
+Basis-ETW0: 6
+Schaden: 2W8 (Klingenwaffe)
+Initiativefaktor: 3
+Waffenfertigkeit: Dolch
+Waffentyp: Einhändig
+Kann nur verwendet werden von:
+  Gestaltwandler~
+
+@3700 = ~Preisnachlaß bei niedrigem Ruf (Sabre)~
+
+@3800 = ~Keine Fallen und Schlösser (Weimer)~
+
+@3900 = ~Magierzauber in Schwerer Rüstung erlauben~
+
+@4000 = ~Wiederhergestellte IWD Bilder während des Ladens~
+
+@4100 = ~Verkaufbare Stäbe, Knüppel und Schleudern~
+
+@4200 = ~Möglichkeit, mehrere magische Schutzgegenstände zugleich zu benutzen~
+
+@4300 = ~Zahlreiche Verbesserung~

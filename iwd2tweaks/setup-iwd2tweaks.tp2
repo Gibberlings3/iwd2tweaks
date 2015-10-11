@@ -1,0 +1,705 @@
+BACKUP ~IWD2Tweaks/backup~
+AUTHOR ~thebigg@spellholdstudios.net, andyr@gibberlings3.net, webmaster@gibberlings.net or idobek@gibberlings3.net (Probably the former)~
+
+VERSION ~v2.2~
+README ~IWD2Tweaks/readme-IWD2Tweaks.html~
+ASK_EVERY_COMPONENT
+
+ALWAYS
+  COPY_EXISTING ~001D10C.ITM~ ~override/TB#IWD2-%COMPONENT_NUMBER%.xxx~
+END
+
+AUTO_TRA ~IWD2Tweaks/%s~
+
+LANGUAGE ~English~                                                                 ~english~ ~IWD2Tweaks/english/setup.tra~
+LANGUAGE ~Polish (Translation by Evendur)~                                         ~polish~  ~IWD2Tweaks/english/setup.tra~
+                                                                                             ~IWD2Tweaks/polish/setup.tra~
+LANGUAGE ~French (Translation by Elgaern the Dragon Slayer)~                       ~french~  ~IWD2Tweaks/english/setup.tra~
+                                                                                             ~IWD2Tweaks/french/setup.tra~
+LANGUAGE ~Russian (Translation by Serdrick, revised by Prowler at arcanecoast.ru)~ ~russian~ ~IWD2Tweaks/english/setup.tra~
+                                                                                             ~IWD2Tweaks/russian/setup.tra~
+LANGUAGE ~Spanish (traducido por Clan DLAN)~                                       ~spanish~ ~IWD2Tweaks/english/setup.tra~
+                                                                                             ~IWD2Tweaks/spanish/setup.tra~
+LANGUAGE ~German (Translation by Caswallon)~                                       ~german~  ~IWD2Tweaks/english/setup.tra~
+                                                                                             ~IWD2Tweaks/german/setup.tra~
+LANGUAGE ~Czech (Translation by Razfallow)~                                        ~Czech~   ~IWD2Tweaks/english/setup.tra~
+                                                                                             ~IWD2Tweaks/czech/setup.tra~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Unlimited Ammo Stacks                            \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @100
+DESIGNATED 100
+
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // looking for ammo
+  READ_SHORT  0x1C "type"
+  READ_SHORT  0x38 "max"
+  PATCH_IF (("%max%" > 1) AND   // if item can already stack and is of the type...
+       (("%type%" =  5) // arrows
+     OR ("%type%" = 14) // bullets
+     OR ("%type%" = 16) // dagger
+     OR ("%type%" = 21) // hammer
+     OR ("%type%" = 24) // darts
+     OR ("%type%" = 25) // axe
+     OR ("%type%" = 31))) BEGIN // bolts
+    WRITE_SHORT 0x38 9999
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Unlimited Gem and Jewelry Stacking               \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @200 
+DESIGNATED 110
+
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // looking for gems and jewelry
+  READ_SHORT  0x1C "type"
+  READ_SHORT  0x68 "max_abil"
+  READ_SHORT  0x70 "max_fx"
+  PATCH_IF (("%max_abil%" = 0) AND ("%max_fx%" = 0) AND // maximum abilities and effects must be zero
+       (("%type%" = 1)          // amulets
+     OR ("%type%" = 34)         // gems
+     OR ("%type%" = 33)         // gold
+     OR ("%type%" = 10))) BEGIN // rings
+    WRITE_SHORT 0x38 9999
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Unlimited Potion Stacking                        \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @300
+DESIGNATED 120
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // looking for potions
+  READ_SHORT  0x1C "type"
+  PATCH_IF (("%type%" = 9)  // potions
+         OR ("%type%" = 71)) BEGIN // food
+    WRITE_SHORT 0x38 9999
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Unlimited Scroll Stacking                        \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @400 
+DESIGNATED 130
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // looking for scrolls
+  READ_SHORT  0x1C "type"
+  PATCH_IF ("%type%" = 11) BEGIN // scrolls
+    WRITE_SHORT 0x38 9999
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Make Bags of Holding Bottomless                 \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @650 
+DESIGNATED 200
+
+COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
+  READ_LONG 0x08 "itemtype"
+  PATCH_IF ("%itemtype%" = 4) BEGIN
+    WRITE_SHORT 0x9c 0xffff
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Weapon Animation Tweaks                          \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @800 
+DESIGNATED 300
+
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~.+\.itm$~ ~override~ // animation adjustments
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    READ_ASCII 0x22 "anim" (2)
+    READ_LONG  0x64 "offset_abil"
+    READ_SHORT 0x68 "num_abil"
+    PATCH_IF ("%anim%" STRING_COMPARE_CASE "ms" = 0) BEGIN
+      WRITE_ASCII 0x22 "MC"
+    END
+    PATCH_IF (("%anim%" STRING_COMPARE_CASE "sp" = 0) OR // spear
+              ("%anim%" STRING_COMPARE_CASE "ss" = 0)) BEGIN // short sword
+      WHILE (0 < "%num_abil%") BEGIN
+        READ_BYTE ("%offset_abil%" + (("%num_abil%" - 1) * 0x38)) "meleecheck"
+        PATCH_IF ("%meleecheck%" = 1) BEGIN
+          WRITE_SHORT ("%offset_abil%" + 0x2C + (("%num_abil%" - 1) * 0x38)) 10 // Overhead
+          WRITE_SHORT ("%offset_abil%" + 0x2E + (("%num_abil%" - 1) * 0x38)) 20 // Backhand
+          WRITE_SHORT ("%offset_abil%" + 0x30 + (("%num_abil%" - 1) * 0x38)) 70 // Thrusting
+        END
+        SET "num_abil" = ("%num_abil%" - 1)
+      END
+    END ELSE
+    PATCH_IF ("%anim%" STRING_COMPARE_CASE "qs" = 0) BEGIN // staff
+      WHILE (0 < "%num_abil%") BEGIN
+        READ_BYTE ("%offset_abil%" + (("%num_abil%" - 1) * 0x38)) "meleecheck"
+        PATCH_IF ("%meleecheck%" = 1) BEGIN
+          WRITE_SHORT ("%offset_abil%" + 0x2C + (("%num_abil%" - 1) * 0x38)) 20 // Overhead
+          WRITE_SHORT ("%offset_abil%" + 0x2E + (("%num_abil%" - 1) * 0x38)) 70 // Backhand
+          WRITE_SHORT ("%offset_abil%" + 0x30 + (("%num_abil%" - 1) * 0x38)) 10 // Thrusting
+        END
+        SET "num_abil" = ("%num_abil%" - 1)
+      END
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Force all dialogue to pause                      \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @1000 
+DESIGNATED 400
+
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~.+\.dlg$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x2f) THEN BEGIN // protects against invalid files
+    READ_LONG  0x0C "offset_state"
+    PATCH_IF ("%offset_state%" = 0x30) BEGIN // adds pause field to older dlg formats
+      READ_LONG  0x14 "offset_response"
+      READ_LONG  0x1C "num_s_trigger"
+      READ_LONG  0x18 "offset_s_trigger"
+      READ_LONG  0x20 "offset_r_trigger"
+      READ_LONG  0x24 "num_r_trigger"
+      READ_LONG  0x28 "offset_action"
+      READ_LONG  0x2C "num_action"
+      WHILE (0 < "%num_s_trigger%") BEGIN
+        READ_LONG  ("%offset_s_trigger%" + (("%num_s_trigger%" - 1) * 0x08)) "indiv_offset"
+        WRITE_LONG ("%offset_s_trigger%" + (("%num_s_trigger%" - 1) * 0x08)) ("%indiv_offset%" + 0x04)
+        SET "num_s_trigger" = ("%num_s_trigger%" - 1)
+      END
+      WHILE (0 < "%num_r_trigger%") BEGIN
+        READ_LONG  ("%offset_r_trigger%" + (("%num_r_trigger%" - 1) * 0x08)) "indiv_offset"
+        WRITE_LONG ("%offset_r_trigger%" + (("%num_r_trigger%" - 1) * 0x08)) ("%indiv_offset%" + 0x04)
+        SET "num_r_trigger" = ("%num_r_trigger%" - 1)
+      END
+      WHILE (0 < "%num_action%") BEGIN
+        READ_LONG  ("%offset_action%" + (("%num_action%" - 1) * 0x08)) "indiv_offset"
+        WRITE_LONG ("%offset_action%" + (("%num_action%" - 1) * 0x08)) ("%indiv_offset%" + 0x04)
+        SET "num_action" = ("%num_action%" - 1)
+      END
+      WRITE_LONG 0x0C ("%offset_state%" + 0x04)
+      WRITE_LONG 0x14 ("%offset_response%" + 0x04)
+      WRITE_LONG 0x18 ("%offset_s_trigger%" + 0x04)
+      WRITE_LONG 0x20 ("%offset_r_trigger%" + 0x04)
+      WRITE_LONG 0x28 ("%offset_action%" + 0x04)
+      INSERT_BYTES 0x30 4
+    END ELSE BEGIN // otherwise just sets to pause
+      WRITE_LONG 0x30 0
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Remove Helmet Animations                         \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @1200 
+DESIGNATED 500
+
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  READ_SHORT 0x1c "itemtype"
+  PATCH_IF ("%itemtype%" = 7) BEGIN
+    WRITE_SHORT 0x22 0
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// 100% Learn Spells                                \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @1300 
+DESIGNATED 600
+
+PRINT @1
+COPY_EXISTING ~intmod.2da~ ~override~
+  SET "row" = 41 // from 40 to 0 included + the header line
+  WHILE ("%row%" > 0) BEGIN
+    SET_2DA_ENTRY_LATER ~intmod~ "%row%" 1 ~100~
+    SET "row" = ("%row%" - 1)
+  END
+  SET_2DA_ENTRIES_NOW ~intmod~ 4
+  PRETTY_PRINT_2DA
+  
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Stores Sell Higher Stacks of Items               \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @1400 
+DESIGNATED 700
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~.+\.sto$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x77) THEN BEGIN // protects against invalid files
+    READ_LONG 0x34 "itemsforsale"
+    READ_LONG 0x38 "#itemsforsale"
+    WHILE ("%#itemsforsale%" > 0) BEGIN
+      READ_ASCII ("%itemsforsale%" + (("%#itemsforsale%" - 1) * 0x1c)) "item"
+      PATCH_IF (("%item%" STRING_COMPARE_CASE "00arow01" = 0) OR
+                ("%item%" STRING_COMPARE_CASE "00bolt01" = 0) OR
+                ("%item%" STRING_COMPARE_CASE "00bull01" = 0) OR
+                ("%item%" STRING_COMPARE_CASE "00dart01" = 0)) BEGIN
+        WRITE_SHORT ("%itemsforsale%" + 0x0a + (("%#itemsforsale%" - 1) * 0x1c)) 100
+      END ELSE
+      PATCH_IF ("%item%" STRING_COMPARE_CASE "00dagg05" = 0) BEGIN
+        WRITE_SHORT ("%itemsforsale%" + 0x0a + (("%#itemsforsale%" - 1) * 0x1c)) 25
+      END ELSE
+      PATCH_IF (("%item%" STRING_COMPARE_CASE "00ax1h04" = 0)
+             OR ("%item%" STRING_COMPARE_CASE "00hamt01" = 0)) BEGIN
+        WRITE_SHORT ("%itemsforsale%" + 0x0a + (("%#itemsforsale%" - 1) * 0x1c)) 10
+      END
+    SET "#itemsforsale" = ("%#itemsforsale%" - 1)
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Staff, Club, and Sling Sellability               \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+BEGIN @4100
+DESIGNATED 800
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  READ_LONG  0x1c "type"
+  READ_SHORT 0x34 "price"
+  PATCH_IF ((("%type%" = 17) OR ("%type%" = 18) OR ("%type%" = 26)) AND ("%price%" = 0)) BEGIN
+    WRITE_SHORT 0x34 1
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// No Traps or Locks (Weimer)                       \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @5000
+DESIGNATED 900
+DEPRECATED @3
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.are$~ ~override~
+  READ_SHORT 0x6a "#trig"
+  READ_LONG  0x6c  "trig_off"
+
+  READ_SHORT 0x84 "#cont"
+  READ_LONG  0x80  "cont_off"
+
+  READ_SHORT 0xb4 "#door"
+  READ_LONG  0xb8  "door_off"
+
+  WHILE ("%#trig%" > 0) BEGIN
+    SET "#trig" = ("%#trig%" - 1)
+    WRITE_SHORT ("%trig_off%" + 0x68 + ("%#trig%" * 0xc4)) 0 // detection
+    WRITE_SHORT ("%trig_off%" + 0x6a + ("%#trig%" * 0xc4)) 0 // removal
+    WRITE_SHORT ("%trig_off%" + 0x6c + ("%#trig%" * 0xc4)) 0 // is trap
+  END
+
+  WHILE ("%#cont%" > 0) BEGIN
+    SET "#cont" = ("%#cont%" - 1)
+    WRITE_LONG  ("%cont_off%" + 0x26 + ("%#cont%" * 0xc0)) 0 // lock
+    WRITE_SHORT ("%cont_off%" + 0x30 + ("%#cont%" * 0xc0)) 0 // is trap
+  END
+
+  WHILE ("%#door%" > 0) BEGIN
+    SET "#door" = ("%#door%" - 1)
+    WRITE_SHORT ("%door_off%" + 0x6c + ("%#door%" * 0xc8)) 0 // trap detection
+    WRITE_SHORT ("%door_off%" + 0x6e + ("%#door%" * 0xc8)) 0 // trap removal
+    WRITE_SHORT ("%door_off%" + 0x70 + ("%#door%" * 0xc8)) 0 // is not trap
+    WRITE_LONG  ("%door_off%" + 0x88 + ("%#door%" * 0xc8)) 0 // detect door
+    WRITE_LONG  ("%door_off%" + 0x8c + ("%#door%" * 0xc8)) 0 // lock
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Rest in Each Area                                \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @5100
+DESIGNATED 1000
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.are$~ ~override~
+  READ_BYTE  0x14 "flags"                       // this bit is called "Tutorial" in NI, but is really
+  WRITE_BYTE 0x14 ("%flags%" BAND "0b11111101") // the can_not_sleep one.
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Save in Each Area                                \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @5150
+DESIGNATED 1100
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.are$~ ~override~
+  READ_BYTE  0x14 "flags"
+  WRITE_BYTE 0x14 ("%flags%" BAND "0b11111110") // this bit is the can't save one.
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Change Magically Created Weapons to Zero Weight  \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @5200 
+DESIGNATED 1200
+
+COPY_EXISTING ~DECASTA.itm~   ~override~ // Decastaff
+              ~SHILLEL.itm~   ~override~ // Shillegagh
+  WRITE_LONG 0x4C 0
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Maximum HP for Non-Party-Joinable NPCs           \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @5300
+DESIGNATED 1300
+
+COPY_EXISTING_REGEXP ~^.*\.cre$~ ~override~
+  SET "maxhp" = 0
+  READ_SHORT 0x24 "curhp"
+  READ_SHORT 0x26 "maxhp"
+  READ_BYTE  0x8b "barbarian"
+  READ_BYTE  0x8c "bard"
+  READ_BYTE  0x8d "cleric"
+  READ_BYTE  0x8e "druid"
+  READ_BYTE  0x8f "fighter"
+  READ_BYTE  0x90 "monk"
+  READ_BYTE  0x91 "paladin"
+  READ_BYTE  0x92 "ranger"
+  READ_BYTE  0x93 "rogue"
+  READ_BYTE  0x94 "sorceror"
+  READ_BYTE  0x95 "wizard"
+  SET "maxed_hp" = 12 * "%barbarian%" + 10 * ("%fighter%" + "%paladin%" + "%ranger%")
+                 + 8 * ("%cleric%" + "%druid%" + "%monk%") + 6 * ("%bard%" + "%rogue%")
+                 + 4 * ("%wizard%" + "%sorceror%")
+  PATCH_IF ("%curhp%" < "%maxed_hp%") BEGIN
+    WRITE_SHORT 0x24 "%maxed_hp%" * "%curhp%" / "%maxhp%"
+    WRITE_SHORT 0x26 "%maxed_hp%"
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Gems and potions have lore                       \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @5400
+DESIGNATED 1400
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) BEGIN
+    READ_SHORT 0x1c "type"
+    READ_SHORT 0x42 "lore"
+    PATCH_IF ((("%type%" = 9) OR ("%type%" = 34)) AND ("%lore%" = 0)) BEGIN // potions
+      READ_LONG  0x34 "price"
+      PATCH_IF ("%price%" > 4025) BEGIN
+        WRITE_SHORT 0x42 (60 + (("%price%" - 4025) / 400))
+      END ELSE
+      PATCH_IF ("%price%" > 2025) BEGIN
+        WRITE_SHORT 0x42 (50 + (("%price%" - 2025) / 200))
+      END ELSE
+      PATCH_IF ("%price%" > 1025) BEGIN
+        WRITE_SHORT 0x42 (40 + (("%price%" - 1025) / 100))
+      END ELSE
+      PATCH_IF ("%price%" > 425) BEGIN
+        WRITE_SHORT 0x42 (30 + (("%price%" - 425) / 60))
+      END ELSE
+      PATCH_IF ("%price%" > 175) BEGIN
+        WRITE_SHORT 0x42 (20 + (("%price%" - 225) / 25))
+      END ELSE
+      PATCH_IF ("%price%" > 25) BEGIN
+        WRITE_SHORT 0x42 (5 + (("%price%" - 50) / 10))
+      END ELSE BEGIN
+        WRITE_SHORT 0x42 ("%price%" / 5)
+      END
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Remove icons added by equipping items            \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @5500
+DESIGNATED 1500
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~.+\.itm$~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x71) THEN BEGIN // protects against invalid files
+    READ_LONG  0x6A "fx_off"
+    READ_SHORT 0x70 "gfx_num"
+    SET "delta" = 0
+    FOR (loops = gfx_num ; loops > 0 ; loops = loops - 1) BEGIN
+      READ_SHORT ("%fx_off%" +        (("%loops%" - 1) * 0x30)) "type"
+      READ_BYTE  ("%fx_off%" + 0x0C + (("%loops%" - 1) * 0x30)) "timing"
+      PATCH_IF (("%type%" = 142) AND ("%timing%" = 2)) BEGIN // display portrait icon and instant/while equipped
+        DELETE_BYTES ("%fx_off%" + (("%loops%" - 1) * 0x30)) 0x30
+        SET "delta" = ("%delta%" + 1)
+      END
+    END
+    PATCH_IF ("%delta%" > 0) BEGIN
+      READ_LONG  0x64 "abil_off"
+      READ_SHORT 0x68 "abil_num"
+      FOR (loops2 = abil_num ; loops2 > 0 ; loops2 = loops2 - 1) BEGIN
+        READ_SHORT  ("%abil_off%" + 0x20 + (0x38 * ("%loops2%" - 1))) "fx_idx"
+        WRITE_SHORT ("%abil_off%" + 0x20 + (0x38 * ("%loops2%" - 1))) ("%fx_idx%" - "%delta%")
+      END
+      WRITE_SHORT 0x70 ("%gfx_num%" - "%delta%")
+      PATCH_IF ("%abil_off%" > "%fx_off%") BEGIN
+        WRITE_LONG  0x64 ("%abil_off%" - (0x30 * "%delta%"))
+      END
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Ammo, Scrolls, Gem & Jewelry Have Weight         \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @5600
+DESIGNATED 1600
+
+// if the tlk is english (test needed for the next component), drop a marker in the override.
+OUTER_INNER_PATCH ~1234~ BEGIN
+  WRITE_LONG  0 13729
+  READ_STRREF 0 "Load_Game"
+  PATCH_IF (("%Load_Game%" STRING_COMPARE_CASE "Load Game") = 0) BEGIN
+    INNER_ACTION BEGIN
+      COPY_EXISTING ~001D10C.ITM~ ~override/tlk_is_english.txt~
+    END
+  END
+END
+
+COPY_EXISTING ~strmod.2da~ ~override~
+  REPLACE_TEXTUALLY ~TO_HIT~ ~BLANK TO_HIT~
+  READ_2DA_ENTRIES_NOW ~_#_#_#strmod_read~ 5
+  FOR ("index" = 1 ; "%index%" < "%_#_#_#strmod_read%" ; "index" = "%index%" + 1) BEGIN
+    READ_2DA_ENTRY_FORMER ~_#_#_#strmod_read~ "%index%" 4 "max_weigth"
+    SET_2DA_ENTRY_LATER ~_#_#_#strmod_set~ "%index%" 4 ("%max_weigth%" * 16)
+  END
+  SET_2DA_ENTRIES_NOW ~_#_#_#strmod_set~ 5
+  REPLACE_TEXTUALLY ~BLANK~ ~     ~
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // looking for ammo
+  READ_SHORT  0x1C "type"
+  READ_LONG   0x4c "weight"
+  SET "newweight" = "%weight%" * 16
+  WRITE_LONG  0x4c "%newweight%"
+  PATCH_IF ("%weight%" = 0) BEGIN
+    PATCH_IF (("%type%" =  5)        // arrows
+           OR ("%type%" = 14)        // bullets
+           OR ("%type%" = 24)        // darts
+           OR ("%type%" = 31)        // bolts
+           OR ("%type%" = 34)) BEGIN // gems
+      // weigth = 2 oz.
+      WRITE_LONG 0x4c 2
+    END
+    ELSE PATCH_IF (("%type%" = 10)         // rings
+           OR ("%type%" = 11)) BEGIN  // scrolls
+      // weigth: 1 oz
+      WRITE_LONG 0x4c 1
+    END
+    ELSE BEGIN
+      // weigth: 4 oz
+      WRITE_LONG 0x4c 4
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+// Enforce the rule that magical weapons have 0 weight, if said component is installed
+ACTION_IF (MOD_IS_INSTALLED ~IWD2Tweaks/Setup-IWD2Tweaks.tp2~ ~1200~) THEN BEGIN
+  COPY_EXISTING_REGEXP GLOB ~^.*\.spl$~ ~override~
+    READ_LONG  0x64 "head_off"
+    READ_SHORT 0x68 "head_cnt"
+    READ_LONG  0x6a "eff_off"
+    READ_SHORT 0x70 "eff_cnt"
+    FOR ("index" = 0; "%index%" < "%eff_cnt%"; "index" = "%index%" + 1) BEGIN
+      READ_SHORT ("%eff_off%" + ("%index%" * 0x30)) "opcode"
+      PATCH_IF ("%opcode%" = 111) BEGIN
+        READ_ASCII ("%eff_off%" + ("%index%" * 0x30) + 0x14) "resref"
+        INNER_ACTION BEGIN
+          COPY_EXISTING ~%resref%.itm~ ~override~
+            WRITE_LONG 0x4c 0
+          BUT_ONLY_IF_IT_CHANGES
+        END
+      END
+    END
+    FOR ("index1" = 0; "%index1%" < "%head_cnt%"; "index1" = "%index1%" + 1) BEGIN
+      READ_SHORT ("%head_off%" + ("%index1%" * 0x28) + 0x1E) "eff_cnt"
+      READ_SHORT ("%head_off%" + ("%index1%" * 0x28) + 0x20) "eff_idx"
+      FOR ("index" = "%eff_idx%"; "%index%" < ("%eff_cnt%" + "%eff_idx%"); "index" = "%index%" + 1) BEGIN
+        READ_SHORT ("%eff_off%" + ("%index%" * 0x30)) "opcode"
+        PATCH_IF ("%opcode%" = 111) BEGIN
+          READ_ASCII ("%eff_off%" + ("%index%" * 0x30) + 0x14) "resref"
+          INNER_ACTION BEGIN
+            COPY_EXISTING ~%resref%.itm~ ~override~
+              WRITE_LONG 0x4c 0
+            BUT_ONLY_IF_IT_CHANGES
+          END
+        END
+      END
+    END
+  BUT_ONLY_IF_IT_CHANGES
+END
+
+// monk fists are weightless
+COPY_EXISTING_REGEXP ~^00mfist[0-9]*\.itm$~ ~override~
+                     ~^00fist\.itm$~        ~override~
+  WRITE_LONG 0x4c 0
+BUT_ONLY_IF_IT_CHANGES
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// Ammo, Scrolls, Gem & Jewelry Have Weight         \\\\\
+///// Description Updater                              \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @5650
+DESIGNATED 1650
+REQUIRE_COMPONENT ~IWD2Tweaks/Setup-IWD2Tweaks.tp2~ ~1600~ @5651
+REQUIRE_FILE "override/tlk_is_english.txt" @4
+
+STRING_SET  9582 @5652
+STRING_SET 39537 @5653
+
+PRINT @1
+COPY_EXISTING_REGEXP GLOB ~^.+\.itm$~ ~override~ // looking for ammo
+  READ_LONG   0x4c "newweight"
+  READ_LONG   0x50 "unide_desc"
+  READ_LONG   0x54 "ident_desc"
+    PATCH_IF ("%unide_desc%" > 1) BEGIN // if unidentified description exists
+      READ_STRREF 0x50 "unide_desc"
+      INNER_PATCH "%unide_desc% " BEGIN
+        COUNT_REGEXP_INSTANCES ~Weight: [ \t]*[0-9]+[ \t]*lb\.~ "num_reg"
+      END
+      PATCH_IF ("%num_reg%" = 1) BEGIN
+        INNER_PATCH_SAVE "unide_desc" "%unide_desc% " BEGIN
+          REPLACE_TEXTUALLY ~Weight: [ \t]*[0-9]+[ \t]*lb\.~ ~Weight: %newweight% oz.~
+        END
+        SAY_EVALUATED 0x50 ~%unide_desc%~
+      END
+      ELSE BEGIN
+        SAY_EVALUATED 0x50 ~%unide_desc%
+Weight: %newweight% oz.~ // % block overflowing strings in ConTEXT
+      END                // ~ block overflowing strings in ConTEXT
+    END
+
+    PATCH_IF ("%ident_desc%" > 0) BEGIN // if identified description exists
+      READ_STRREF 0x54 "ident_desc"
+      INNER_PATCH "%ident_desc% " BEGIN
+        COUNT_REGEXP_INSTANCES ~Weight: [ \t]*[0-9]+[ \t]*lb\.~ "num_reg"
+      END
+      PATCH_IF ("%num_reg%" = 1) BEGIN
+        INNER_PATCH_SAVE "ident_desc" "%ident_desc% " BEGIN
+          REPLACE_TEXTUALLY ~Weight: [ \t]*[0-9]+[ \t]*lb\.~ ~Weight: %newweight% oz.~
+        END
+        SAY_EVALUATED 0x54 ~%ident_desc%~
+      END
+      ELSE BEGIN
+        SAY_EVALUATED 0x54 ~%ident_desc%
+Weight: %newweight% oz.~ // % block overflowing strings in ConTEXT
+      END                // ~ block overflowing strings in ConTEXT
+    END
+  BUT_ONLY_IF_IT_CHANGES
+
+

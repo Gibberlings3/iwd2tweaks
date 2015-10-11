@@ -1,0 +1,69 @@
+@1    = ~This step may take a few moments ...~
+@2    = ~This component is already installed by another mod.~
+@3    = ~This component has been removed because it's too buggy.~
+@4    = ~This component is only available for an English .tlk file.~
+
+@100  = ~Unlimited Ammo Stacking~
+
+@200  = ~Unlimited Gem and Jewelry Stacking~
+
+@300  = ~Unlimited Potion Stacking~
+
+@400  = ~Unlimited Scroll Stacking~
+
+@650  = ~Make Bags of Holding Bottomless~
+
+@800  = ~Weapon Animation Tweaks~
+
+@1000 = ~Force All Dialogue to Pause Game~
+
+@1200 = ~Remove Helmet Animations~
+
+@1300 = ~100% Learn Spells~
+
+@1400 = ~Stores Sell Higher Stacks of Items~
+
+@4100 = ~Staff, Club, and Sling Sellability~
+
+@5000 = ~No Traps, Locks, or Detection Difficulty (weimer)~
+
+@5100 = ~Rest in Each Area~
+
+@5150 = ~Save in Each Area~
+
+@5200 = ~Magically Created Weapons Have Zero Weigth~
+
+@5300 = ~Maximum HP for Non-Party-Joinable NPCs~
+
+@5400 = ~Potions and Gems Require Identification~
+
+@5500 = ~Remove icons added by equipping items~
+
+@5600 = ~Ammo, Scrolls, Gem & Jewelry Have Weight~
+
+@5650 = ~Ammo, Scrolls, Gem & Jewelry Have Weight - Description Updater~
+@5651 = ~Requires the "Ammo, Scrolls, Gem & Jewelry Have Weight" component~
+@5652 = ~STRENGTH (Str):
+
+Strength measures a character's muscle, endurance, and stamina.  Strength is especially important to fighters, barbarians, paladins, rangers, and monks because it helps them prevail in combat.
+
+Strength affects a character's chance to hit in melee, how much damage is inflicted with melee and thrown weapons, the ability to force open locked doors and containers, and how much a character can carry.
+
+Score: Melee Attack/Melee & Thrown Damage/Force Lock Modifier, Weight Limit
+1: -5, 16
+2-3: -4, 40
+4-5: -3, 240
+6-7: -2, 480
+8-9: -1, 800
+10-11: 0, 1120
+12-13: +1, 1240
+14-15: +2, 1920
+16-17: +3, 2560
+18-19: +4, 3440
+20-21: +5, 4560
+22-23: +6, 6000
+24-25: + 7, 8000
+26-27: +8, 10400
+28-29: +9, 14000
+30: +10, 16000~
+@5653 = ~oz.~
