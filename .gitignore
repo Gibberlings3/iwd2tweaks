@@ -1,0 +1,11 @@
+*.7z
+*.rar
+*.zip
+*.tar.gz
+*.exe
+!iconv.exe
+!oggdec.exe
+!tisunpack.exe
+!TobExLoader.exe
+setup-iwd2tweaks
+setup-iwd2tweaks.command
